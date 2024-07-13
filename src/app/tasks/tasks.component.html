@@ -1,0 +1,25 @@
+
+<section id="tasks">
+<header>
+  <h2>{{name}} 's Tasks</h2>
+  <menu>
+    <button (click)="showAddTask()">Add Task</button>
+  </menu>
+
+</header>
+
+<ul >
+
+@for (item of selectedUserTasks; track id) {
+
+  <li >
+    <app-task [task]="item" (complete)="onCompleteTask($event)"></app-task>
+ </li>
+}
+</ul>
+
+</section>
+
+@if(isAdding){
+  <app-add-task (hideForm)="closeForm()" (add)="addTask($event)"></app-add-task>
+}
