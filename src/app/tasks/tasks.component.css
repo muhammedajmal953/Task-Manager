@@ -4,6 +4,7 @@
   max-height: 60vh;
   overflow: auto;
   background-color: #3a2c54;
+  scrollbar-width: none;
 }
 
 header {
@@ -50,6 +51,7 @@ ul {
   gap: 1rem;
   max-height: 50vh;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 @media (min-width: 768px) {
