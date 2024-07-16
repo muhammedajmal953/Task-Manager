@@ -31,4 +31,5 @@ export class AppComponent {
   onSelect(id: string) {
     this.id=id
   }
+  
 }
